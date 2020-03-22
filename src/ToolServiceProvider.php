@@ -18,6 +18,7 @@ class ToolServiceProvider extends VyuldashevServiceProvider
      */
     public function boot()
     {
-        //
+        parent::boot();
+        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'nova-custom-permission');
     }
 }
